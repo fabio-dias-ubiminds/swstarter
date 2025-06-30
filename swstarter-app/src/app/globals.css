@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --warm-grey: #ededed;
+  --foreground: #383838;
+  --pinkish-grey: #c4c4c4;
+  --green-teal: #0ab463;
+  --emerald: #089954;
+  --white: #ffffff;
+  --black: #000000;
+  --warm-grey-75: #848484bf;
+}
+
+body {
+  background-color: var(--warm-grey);
+  color: var(--foreground);
+  font-family: var(--font-montserrat);
+}

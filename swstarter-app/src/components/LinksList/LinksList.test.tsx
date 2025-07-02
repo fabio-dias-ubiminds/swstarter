@@ -5,12 +5,12 @@ import { LinksList } from "./index";
 describe("LinksList", () => {
   test("renders with correct content when type is people", () => {
     render(<LinksList links={[]} type="people" />);
-    expect(screen.getByText("Movies")).toBeInTheDocument();
+    expect(screen.getByText("Characters")).toBeInTheDocument();
   });
 
   test("renders with correct content when type is movies", () => {
     render(<LinksList links={[]} type="movies" />);
-    expect(screen.getByText("Characters")).toBeInTheDocument();
+    expect(screen.getByText("Movies")).toBeInTheDocument();
   });
 
   test("renders the list correctly when have one item", () => {

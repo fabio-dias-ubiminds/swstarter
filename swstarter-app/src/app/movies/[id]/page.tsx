@@ -11,7 +11,7 @@ export default async function MoviesPage({ params }: { params: Promise<{ id: str
     <DetailsPage
       title={movie.title}
       leftContent={<OpeningCrawl openingCrawl={movie.openingCrawl} />}
-      rightContent={<LinksList links={movie.characters || []} type="movies" />}
+      rightContent={<LinksList links={movie.characters || []} type="people" />}
     />
   );
 }

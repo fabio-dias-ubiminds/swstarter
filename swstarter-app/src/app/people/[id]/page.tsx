@@ -11,7 +11,7 @@ export default async function PeoplePage({ params }: { params: Promise<{ id: str
     <DetailsPage
       title={person.name}
       leftContent={<PersonDetails person={person} />}
-      rightContent={<LinksList links={person.movies || []} type="people" />}
+      rightContent={<LinksList links={person.movies || []} type="movies" />}
     />
   );
 }

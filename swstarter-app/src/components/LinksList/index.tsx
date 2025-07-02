@@ -14,7 +14,7 @@ interface LinksListProps {
 export const LinksList = ({ links, type }: LinksListProps) => {
   return (
     <StyledLinksListContainer>
-      <TopicTitle title={type === "people" ? "Movies" : "Characters"} size="md" />
+      <TopicTitle title={type === "people" ? "Characters" : "Movies"} size="md" />
       <StyledLinksListContentContainer>
         {links.map((link, index) => (
           <React.Fragment key={`link-${index}`}>
